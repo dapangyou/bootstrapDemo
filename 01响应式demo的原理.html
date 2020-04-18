@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 150px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+
+        /* 超小屏幕下 小于768  布局容器的宽度为100% */
+        @media screen and (max-width: 9.5875rem) {
+            .container {
+                width: 100%;
+            }
+        }
+
+        /* 小屏幕下  布局容器改为750px*/
+        @media screen and (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+        }
+
+        /* 中等屏幕下  992px  */
+        @media screen and (min-width: 992px) {
+            .container {
+                width: 992px;
+            }
+        }
+
+        /* 大屏下 大于等于1170 */
+        @media screen and (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--  在响应式里面 首先需要一个布局的容器-->
+    <div class="container"></div>
+</body>
+
+</html>
